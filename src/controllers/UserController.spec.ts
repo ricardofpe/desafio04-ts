@@ -13,13 +13,13 @@ describe('UserController', () => {
     it('Deve adicionar um novo usuário', () => {
         const mockRequest = {
             body: {
-                name: 'Nath',
-                email: 'nath@test.com'
+                name: 'Rick',
+                email: 'rick@test.com'
             }
         } as Request
         const mockResponse = makeMockResponse()
         userController.createUser(mockRequest, mockResponse)
         expect(mockResponse.state.status).toBe(201)
-        expect(mockResponse.state.json).toMatchObject({ message: 'Usuário criado' })
+        expect(mockResponse.state.json).toMatchObject({ message: 'User Created' })
     })
 })

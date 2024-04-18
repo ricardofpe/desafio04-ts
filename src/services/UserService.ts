@@ -5,8 +5,8 @@ export interface User {
 
 const db = [
     {
-        name: "Joana",
-        email: "joana@dio.com",
+        name: "rick",
+        email: "rick@dio.com",
     }
 ]
 
